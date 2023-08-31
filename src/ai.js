@@ -23,7 +23,7 @@ const askAboutAgriculture = (question) => {
         }
       ],
       temperature: 0.7,
-      max_tokens: 150
+      max_tokens: 500
     });
 
     const config = {
@@ -39,8 +39,13 @@ const askAboutAgriculture = (question) => {
 
     axios.request(config)
       .then((response) => {
-        const answer = response.data.choices[0].message.content.trim();
-        resolve(answer);
+        console.log('OpenAI API Response:', response.data);
+        if (response.data.choices && response.data.choices[0] && response.data.choices[0].message) {
+          const answer = response.data.choices[0].message.content.trim();
+          resolve(answer);
+        } else {
+          reject(new Error('Invalid API response format'));
+        }
       })
       .catch((error) => {
         console.error('Axios Error:', error.message);

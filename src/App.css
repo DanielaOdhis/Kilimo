@@ -2,6 +2,16 @@
   color: white;
 }
 
+.back{
+  background-image: url('./lea.jpeg');
+}
+.text{
+  color:white;
+}
+.text p{
+  color:white;
+  width: 50%;
+}
 .App-header {
   background-color: #282c34;
   padding: 20px;
@@ -10,23 +20,27 @@
 
 h1 {
   margin: 0;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 3rem;
+  margin-left: 360px;
+  color: white;
 }
 
-form {
+/*form {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-
-input[type="text"] {
+*/
+/*input[type="text"] {
   padding: 8px;
   width: 60%;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
+*/
+p{
+  color: black;
+}
 button {
   background-color: #4caf50;
   color: white;
@@ -85,13 +99,18 @@ input[type="text"] {
   padding: 10px;
   border: 1px solid #222;
   border-radius: 5px;
+  width: 60%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-p {
+/*p {
   margin: 0;
   color: white;
 }
-
+*/
 .loading {
   margin-top: 10px;
   display: flex;
@@ -120,36 +139,55 @@ p {
   animation: spin 1s linear infinite;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
-.app {
+.c-container{
+  display: inline;
+}
+.irrigate{
   width: 40%;
   height: 50%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+  margin-left: 0%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.irrigate ul{
+  color: black;
+}
+.app {
+  width: 70%;
+  height: 50%;
+  margin-left: 100px;
   border-radius: 10px;
   background-image: url('./cold.jpg');
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
-  margin-right: 100px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
 
+.mar{
+  margin-left: 300px;
+}
+.italic{
+  font-style: italic;
+  color: black;
+}
 .app.warm {
   background-image: url('./warm.jpg');
 }
 
-main {
+.main {
   min-height: 50%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
   padding: 25px;
@@ -170,13 +208,13 @@ main {
   border: none;
   outline: none;
 
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 0px 0px 16px 16px;
   margin-top: -25px;
 
   box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
-  
-  color: #313131;
+
+  color: #1f1515;
   font-size: 20px;
 
   transition: 0.4s ease;
@@ -230,4 +268,246 @@ main {
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.link{
+  text-decoration: none;
+  color:black;
+  font-weight: 600;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('https://i.postimg.cc/VNzjFrtV/wheat.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-wrapper {
+  background-image:url('https://i.postimg.cc/FRj04Zyx/gfgfgff.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.error{
+  color: red;
+}
+* Reduce the container width for the login form */
+.login-form-container {
+max-width: 200px; /* Adjust this value to control container width */
+margin: 0 auto; /* Center the container horizontally */
+}
+
+.login-form input {
+padding: 10px;
+margin-bottom: 2px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.login-form h1{
+  text-align: center;
+  margin-left: 00px;
+}
+.login-form {
+display: grid;
+gap: 10px;
+justify-content: center;
+align-items: center;
+max-width: 500px; /* Adjust this value to control container width */
+  margin: 2 auto; /* Center the container horizontally */
+}
+.login-form-container p{
+  color: white;
+}
+/* Center and arrange input fields for sign-up page */
+.signup-form{
+display: grid;
+gap: 10px;
+justify-content: center;
+align-items: center;
+max-width: 500px; /* Adjust this value to control container width */
+margin: 2 auto; /* Center the container horizontally */
+
+}
+.signup-form-container {
+max-width: 1000px; /* Adjust this value to control container width */
+margin: 0 auto; /* Center the container horizontally */
+}
+
+.signup-form input { padding: 10px; margin-bottom: 2px; border: 1px solid #ccc; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px;
+}
+
+.signup-form-container p{
+  color: white;
+}
+
+.land-container{
+  background: rgba(217, 217, 217, 0.06);
+backdrop-filter: blur(30.706666946411133px);
+}
+
+.handing-container{
+  background-image: url('./leaf.jpeg') ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.drop-container{
+  flex-direction: flex;
+  justify-content: space-between;
+  background: rgba(217, 217, 217, 0.06);
+  backdrop-filter: blur(30.706666946411133px);
+  width: 75%;
+height: 80%;
+flex-shrink: 0;
+margin-left: 100px;
+}
+.drop{
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.drop h1{
+  text-align: left;
+  color: white;
+  margin-left: 0px;
+  font-size: 2.5rem;
+}
+.drop p{
+  text-align: left;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.twig{
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+}
+.img{
+  width: 15%;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color:white;
+}
+
+.drop button{
+  border-radius: 20px;
+  background: rgba(160, 214, 66, 0.25);
+  box-shadow: -15.6px 15.6px 15.6px 0px rgba(255, 255, 255, 0.10) inset, 15.6px -15.6px 15.6px 0px rgba(165, 165, 165, 0.10) inset;
+  backdrop-filter: blur(15.600000381469727px);
+  color: white;
+  margin: 16px;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.kili{
+  display: inline-flex;
+padding: 62px 45px 65px 40px;
+align-items: center;
+margin: 4px;
+gap: 40px;
+}
+.irri{
+  background-image: url('./irrigate.jpeg');
+  display: inline-flex;
+padding: 62px 45px 65px 40px;
+align-items: center;
+margin: 4px;
+gap: 20px;
+}
+.jaba{
+  display: inline-flex;
+align-items: center;
+margin: 4px;
+}
+.push{
+  margin-left: 50px;
+}
+.box{
+  margin: 10px;
+  border-radius: 30px;
+background: #123524;
+box-shadow: 0px 6.91px 6.91px 0px #000 inset, 0px -6.91px 6.91px 0px rgba(0, 0, 0, 0.55) inset;
+width: 389px;
+height: 200px;
+text-align: center;
+flex-shrink: 0;
+color:white;
+}
+.box p{
+  margin: 20px;
+  color: white;
+}
+.assist{
+  background-color: black;
+}
+.assist p{
+  color: white;
+  margin-left: 60px;
+}
+.half{
+  width: 50%;
+  color: #FFF;
+font-family: Lora;
+font-size: 20px;
+font-style: italic;
+line-height: normal;
+}
+
+.wed{
+  background: #B4201C;
+  width: 120%;
+  height: 35%;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.wed button{
+  background: #5F0A0E;
+  color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.die{
+  background-color: #000;
 }
